@@ -2,7 +2,6 @@ import os
 import re
 import chardet
 import json
-import glob
 
 # 取得當前目錄
 current_directory = os.getcwd()
@@ -29,14 +28,18 @@ for lv_data in configFileList:
     index = 0
     for lang in configLanguageList:
         temp = lv_data.split(".")
+        orgPath = current_directory + "\\org"
+        langPath = current_directory + "\\" + lang
 
         # 指定要讀取的原始檔案名稱
         input_filename = lv_data
-        input_file_path = os.path.join(current_directory + "\\org", input_filename)
+        input_file_path = os.path.join(orgPath, input_filename)
 
         # 指定要保存的新檔案名稱
         output_filename = f"{temp[0]}_utf8_{lang}.{temp[1]}"
-        output_file_path = os.path.join(current_directory + "\\" + lang, output_filename)
+        output_file_path = os.path.join(langPath, output_filename)
+
+        tempPath1 = output_file_path
 
         # 確認原始檔案是否存在
         if os.path.exists(input_file_path):
@@ -64,19 +67,50 @@ for lv_data in configFileList:
 
         # =================================================================================
         print("=" * 30)
+        # 指定要讀取的原始檔案名稱
+        trans_filename = f"{temp[0]}_trans_{lang}.txt"
+        trans_file_path = os.path.join(langPath, trans_filename)
+
+        # 指定要保存的新檔案名稱
+        trans_output_filename = f"{temp[0]}_tran_{lang}.csv"
+        trans_output_file_path = os.path.join(langPath, trans_output_filename)
+
+        tempPath2 = trans_output_file_path
+
+        # 確認原始檔案是否存在
+        if os.path.exists(trans_file_path):
+            print(f"正在讀取檔案: {trans_filename}")
+
+            # 以二進制模式讀取原始檔案
+            with open(trans_file_path, "rb") as file:
+                raw_data = file.read()
+
+            # 使用 chardet 檢測編碼
+            result = chardet.detect(raw_data)
+            encoding = result["encoding"]
+            print(f"檢測到的編碼:  {encoding} ")
+
+            # 將內容以檢測到的編碼解碼，然後寫入新的 UTF-8 檔案
+            try:
+                content = raw_data.decode(encoding)
+                with open(trans_output_file_path, "w", encoding="UTF-8") as file:
+                    file.write(content)
+                print(f"已將內容保存至 {trans_output_filename}，使用 UTF-8 編碼。")
+            except UnicodeDecodeError:
+                print(f"無法使用檢測到的編碼 {encoding} 解碼檔案 {trans_filename}。")
+        else:
+            print(f"檔案 {trans_filename} 不存在於當前目錄中。")
+        # ==================================================================================
+
+        print("=" * 30)
         dic = {}
 
-        # 使用 glob 模組獲取所有 CSV 檔案的檔名
-        csv_files = glob.glob(os.path.join(current_directory + "\\" + lang, '*.csv'))
-
-        csv_file_path = os.path.join(current_directory + "\\" + lang, csv_files[0])
-
         # 確認檔案是否存在
-        if os.path.exists(csv_file_path):
-            print(f"10:正在讀取檔案: {csv_files[0]}")
+        if os.path.exists(trans_output_file_path):
+            print(f"10:正在讀取檔案: {trans_output_filename}")
 
             # 讀取檔案內容
-            with open(csv_file_path, "r", encoding="utf-8") as file:
+            with open(trans_output_file_path, "r", encoding="utf-8") as file:
                 content = file.read()
                 content1 = content.split("\n")
                 content1.pop()
@@ -89,13 +123,13 @@ for lv_data in configFileList:
                             dic[item[2]] = item[3]
 
         else:
-            print(f"11:檔案 {csv_files[0]} 不存在於當前目錄中。")
+            print(f"11:檔案 {trans_output_filename} 不存在於當前目錄中。")
 
         # 指定要讀取的檔案名稱
         file_path = output_file_path
 
         result_filename = f"{temp[0]}_{lang}_result.txt"
-        output_file_path = os.path.join(current_directory + "\\" + lang, result_filename)
+        output_file_path = os.path.join(langPath, result_filename)
         # 確認檔案是否存在
         if os.path.exists(file_path):
             print(f"13:正在讀取檔案: {output_filename}")
@@ -108,17 +142,11 @@ for lv_data in configFileList:
                     # 正則表達式模式，匹配 'ID=82' 且捕獲中間的所有內容直到 'menustrip'
                     pattern = f"(ID=82.*?>)({keyword})(<)"
 
-
-                    # replacePattern = rf'\1{dic[keyword]}\3'
                     def replace_func(match):
                         return f"{match.group(1)}{dic[keyword]}{match.group(3)}"
 
-
                     # 替換 'Play' 為 'abc'
                     content = re.sub(pattern, replace_func, content, flags=re.DOTALL)
-
-                    # 替換 'menustrip' 為 'abc'
-                    # content = re.sub(pattern, replacePattern, content)
 
                 # print(content)
                 with open(output_file_path, "w", encoding="UTF-8") as file1:
@@ -129,4 +157,13 @@ for lv_data in configFileList:
             print(f"15:檔案 {output_filename} 不存在於當前目錄中。")
 
         index += 1
+
+        print("=" * 30)
+
+        os.remove(tempPath1)
+        print(f"已將檔案 {output_filename} 刪除")
+
+        os.remove(tempPath2)
+        print(f"已將檔案 {trans_output_filename} 刪除")
+
         print("=" * 30)
