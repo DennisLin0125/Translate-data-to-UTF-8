@@ -1,0 +1,2669 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=1958 name="main.vi">
+<TITLE>LinkVIeW Ver 1.1.0.1233 -- (Unregisted )</TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=175 type=".NET Container" name="MenuStrip">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT predef=APPFONT color=DCD100>MenuStrip</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<GROUPER>
+		<PARTS>
+			<CONTROL ID=79 type="Boolean" name="Settings Button">
+				<DESC></DESC>
+				<TIP>Configure</TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><STRINGS><STRING>Settings</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Settings Button</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="Play">
+				<DESC></DESC>
+				<TIP>Play</TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=24><STRINGS><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Play</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="New Button">
+				<DESC>Start Pattern Editor</DESC>
+				<TIP>Editor</TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><STRINGS><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>New Button</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="Stop">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT style='B' size=18 color=FF0000><STRINGS><STRING>Emergency</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT style='B' size=24 color=FF0400>Emergency</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="Open Button">
+				<DESC></DESC>
+				<TIP>Open</TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><STRINGS><STRING>Open</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>fdsafsd</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</PARTS></GROUPER>
+	<CONTROL ID=79 type="Boolean" name="Pause">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=24><STRINGS><STRING>0  00:00:18</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Pause</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="Boolean" name="Exit">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Exit</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="Cluster" name="Log">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=20>Logger Settings</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="Numeric" name="LogRate">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=20>LogRate(ms)</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=87 type="Enum" name="Logging Source">
+				<DESC>LDSR: BiDirectional Source<LF>
+Res.: Reading from Load / Source<LF>
+</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=20><STRINGS></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=20>Logging Source</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=223 type="Time Stamp" name="Time Stamp">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8019 order=0 type="Browse Button">
+				<CONTROL ID=79 type="Boolean" >
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Time Stamp</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="Boolean" name="Help Button">
+		<DESC></DESC>
+		<TIP>Help</TIP>
+		<PARTS>
+			<PART ID=22 order=0 type="Boolean Text"><MLABEL><STRINGS><STRING>Help</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Sample Mode:<<Universal>> with 100.0ms</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=85 type="VI Refnum" name="CoreExRef">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>CoreExRef</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=91 type="Path" name="SeqOnTest">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8019 order=0 type="Browse Button">
+				<CONTROL ID=79 type="Boolean" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=22 order=0 type="Boolean Text"><MLABEL><STRINGS><STRING></STRING></STRINGS></MLABEL></PART>
+						<PART ID=82 order=0 type="Caption"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SeqOnTest</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<PROMPT></PROMPT>
+			<MTCH_PTN></MTCH_PTN>
+			<PTN_LBEL></PTN_LBEL>
+			<STRT_PTH><PATH type="absolute"></PATH></STRT_PTH>
+			<PTH_BTN_LBL></PTH_BTN_LBL>
+		</PRIV>
+		<DEFAULT>
+			<PATH type="absolute"></PATH>
+		</DEFAULT>
+	</CONTROL>
+	<CONTROL ID=81 type="String" name="Password">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Password</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><SAME_AS_LABEL></DEFAULT>
+	</CONTROL>
+	<CONTROL ID=79 type="Boolean" name="Licensed">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Licensed</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="Boolean" name="LicCheck">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>LicCheck</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="Cluster" name="License Mon">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>License Mon</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=81 type="String" name="lis">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>lis</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="SerialNumber">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SerialNumber</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="FileSystemType">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>FileSystemType</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="VolumeName">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>VolumeName</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=87 type="Enum" name="Drive Type">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="Ring Text"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Drive Type</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="Drive ID">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Drive ID</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=82 type="Array" name="main_soc_controls">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>main_soc_controls</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT>
+			<ARRAY nElems=0>
+			</ARRAY>
+		</DEFAULT>
+		<CONTENT>
+			<CONTROL ID=81 type="String" name="Label.Text">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Label.Text</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=82 type="Array" name="charge_table">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>charge_table</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<CONTROL ID=80 type="Numeric" name="Numeric Control">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Numeric Control</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=80 type="Numeric" name="SystemTimer">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SystemTimer</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="Cluster" name="Next Step">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Next Step</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=81 type="String" name="Navigate Tree:Get Next Item">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Navigate Tree:Get Next Item</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=85 type="Control Refnum" name="CtlRef">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>CtlRef</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=231 type="Tree" name="Tree">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Tree</STEXT></LABEL></PART>
+						</PARTS>
+						<PRIV>
+							<CELL_FONTS>
+								[-2 -2]<FONT predef=APPFONT color=000000>
+							</CELL_FONTS>
+							<ROW_HEADER>
+							</ROW_HEADER>
+							<COL_HEADER>
+							</COL_HEADER>
+							<STRINGS>
+							</STRINGS>
+						</PRIV>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=91 type="Path" name="XML File Path(duplicate)">
+		<DESC><<B>>XML File Path(duplicate)<</B>> is the path of the file from which the VI reads data.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8019 order=0 type="Browse Button">
+				<CONTROL ID=79 type="Boolean" >
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>XML File Path(duplicate)</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<PROMPT></PROMPT>
+			<MTCH_PTN></MTCH_PTN>
+			<PTN_LBEL></PTN_LBEL>
+			<STRT_PTH><PATH type="absolute"></PATH></STRT_PTH>
+			<PTH_BTN_LBL></PTH_BTN_LBL>
+		</PRIV>
+		<DEFAULT>
+			<PATH type="absolute"></PATH>
+		</DEFAULT>
+	</CONTROL>
+	<CONTROL ID=195 type="Tab Control" name="Tab Control">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=92 order=0 type="Tab Caption"><LABEL><STEXT>SOCEx</STEXT></LABEL></PART>
+			</PARTS>
+			<PART ID=8001 order=0 type="Digital Display">
+				<CONTROL ID=87 type="Enum" >
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=12 order=0 type="Ring Text"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>C-D Mon.</STEXT></LABEL></PART>
+		</PARTS>
+		<PAGE>
+			<DESC></DESC>
+			<TIP></TIP>
+			<CONTROL ID=88 type="Thermometer" name="Thermometer">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Temp.</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=88 type="Tank" name="Humidity">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Humidity</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=87 type="Ring" name="DispType">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=18><STRINGS><STRING>Source_IN</STRING><STRING>List</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Viewer</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Measure">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT style='O' size=24 color=EF000E></STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="Power">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Power(W)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Current">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Current(A)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Voltage">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Voltage(V)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=80 type="Numeric" name="Elapsed Time">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Elapsed Time</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="Numeric" name="Step Elapsed">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Step Elapsed</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="Numeric" name="Iter_Round">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Loop-Round</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="ActStep">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Action Step Info.</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</PAGE>
+		<PAGE>
+			<DESC></DESC>
+			<TIP></TIP>
+		</PAGE>
+		<PAGE>
+			<DESC></DESC>
+			<TIP></TIP>
+			<CONTROL ID=230 type="Multicolumn Listbox" name="SOC-Table">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<CELL_FONTS>
+						[-2 -2]<FONT predef=APPFONT size=22 color=000000>
+					</CELL_FONTS>
+					<ROW_HEADER>
+						<STRING>1</STRING>
+						<STRING>2</STRING>
+					</ROW_HEADER>
+					<COL_HEADER>
+						<STRING>SOC(%)</STRING>
+						<STRING>Open Volt(V)</STRING>
+						<STRING>ESR</STRING>
+						<STRING>SOC(%)</STRING>
+						<STRING>Open Volt(V)</STRING>
+						<STRING>ESR</STRING>
+					</COL_HEADER>
+					<STRINGS>
+					</STRINGS>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=85 type="VI Refnum" name="ref main_Soc">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT predef=DLGFONT>ref main_Soc</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Bat Info.">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Battery Spec.:</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="Cap">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Capacity(mAh)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Vo">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Vo(V)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Vc">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Vcharge(V)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="InitCap">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>InitCap(%)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="CapWh">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Capacity(Wh)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Vfull">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Full(V)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="VEmpty">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Empty(V)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=88 type="Tank" name="BatInd">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22 color=FF0000></STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=87 type="Ring" name="BatTestMode">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=22><STRINGS><STRING>Prod (SOC)</STRING><STRING>DCIR</STRING><STRING>Mixed (SOC/DCIR)</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Test Mode</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Mon">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT predef=DLGFONT>Mon</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=88 type="Slide" name="Batt. ">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT predef=DLGFONT size=24>Batt. ¢J</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="Boolean" name="Enable">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT predef=DLGFONT>Enable</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=87 type="Ring" name="Range CH">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=24><STRINGS><STRING>CH 1-1</STRING><STRING>CH 1-2</STRING><STRING>CH 1-3</STRING><STRING>CH 1-4</STRING><STRING>CH 1-5</STRING><STRING>CH 1-6</STRING><STRING>CH 1-7</STRING><STRING>CH 1-8</STRING><STRING>CH 1-9</STRING><STRING>CH 1-10</STRING><STRING>CH 1-11</STRING><STRING>CH 1-12</STRING><STRING>CH 1-13</STRING><STRING>CH 1-14</STRING><STRING>CH 1-15</STRING><STRING>CH 1-16</STRING><STRING>CH 1-17</STRING><STRING>CH 1-18</STRING><STRING>CH 1-19</STRING><STRING>CH 1-20</STRING><STRING>CH 1-21</STRING><STRING>CH 1-22</STRING><STRING>CH 1-23</STRING><STRING>CH 1-24</STRING><STRING>CH 1-25</STRING><STRING>CH 1-26</STRING><STRING>CH 1-27</STRING><STRING>CH 1-28</STRING><STRING>CH 1-29</STRING><STRING>CH 1-30</STRING><STRING>CH 2-1</STRING><STRING>CH 2-2</STRING><STRING>CH 2-3</STRING><STRING>CH 2-4</STRING><STRING>CH 2-5</STRING><STRING>CH 2-6</STRING><STRING>CH 2-7</STRING><STRING>CH 2-8</STRING><STRING>CH 2-9</STRING><STRING>CH 2-10</STRING><STRING>CH 2-11</STRING><STRING>CH 2-12</STRING><STRING>CH 2-13</STRING><STRING>CH 2-14</STRING><STRING>CH 2-15</STRING><STRING>CH 2-16</STRING><STRING>CH 2-17</STRING><STRING>CH 2-18</STRING><STRING>CH 2-19</STRING><STRING>CH 2-20</STRING><STRING>CH 2-21</STRING><STRING>CH 2-22</STRING><STRING>CH 2-23</STRING><STRING>CH 2-24</STRING><STRING>CH 2-25</STRING><STRING>CH 2-26</STRING><STRING>CH 2-27</STRING><STRING>CH 2-28</STRING><STRING>CH 2-29</STRING><STRING>CH 2-30</STRING><STRING>CH 3-1</STRING><STRING>CH 3-2</STRING><STRING>CH 3-3</STRING><STRING>CH 3-4</STRING><STRING>CH 3-5</STRING><STRING>CH 3-6</STRING><STRING>CH 3-7</STRING><STRING>CH 3-8</STRING><STRING>CH 3-9</STRING><STRING>CH 3-10</STRING><STRING>CH 3-11</STRING><STRING>CH 3-12</STRING><STRING>CH 3-13</STRING><STRING>CH 3-14</STRING><STRING>CH 3-15</STRING><STRING>CH 3-16</STRING><STRING>CH 3-17</STRING><STRING>CH 3-18</STRING><STRING>CH 3-19</STRING><STRING>CH 3-20</STRING><STRING>CH 3-21</STRING><STRING>CH 3-22</STRING><STRING>CH 3-23</STRING><STRING>CH 3-24</STRING><STRING>CH 3-25</STRING><STRING>CH 3-26</STRING><STRING>CH 3-27</STRING><STRING>CH 3-28</STRING><STRING>CH 3-29</STRING><STRING>CH 3-30</STRING><STRING>CH 4-1</STRING><STRING>CH 4-2</STRING><STRING>CH 4-3</STRING><STRING>CH 4-4</STRING><STRING>CH 4-5</STRING><STRING>CH 4-6</STRING><STRING>CH 4-7</STRING><STRING>CH 4-8</STRING><STRING>CH 4-9</STRING><STRING>CH 4-10</STRING><STRING>CH 4-11</STRING><STRING>CH 4-12</STRING><STRING>CH 4-13</STRING><STRING>CH 4-14</STRING><STRING>CH 4-15</STRING><STRING>CH 4-16</STRING><STRING>CH 4-17</STRING><STRING>CH 4-18</STRING><STRING>CH 4-19</STRING><STRING>CH 4-20</STRING><STRING>CH 4-21</STRING><STRING>CH 4-22</STRING><STRING>CH 4-23</STRING><STRING>CH 4-24</STRING><STRING>CH 4-25</STRING><STRING>CH 4-26</STRING><STRING>CH 4-27</STRING><STRING>CH 4-28</STRING><STRING>CH 4-29</STRING><STRING>CH 4-30</STRING><STRING>CH 5-1</STRING><STRING>CH 5-2</STRING><STRING>CH 5-3</STRING><STRING>CH 5-4</STRING><STRING>CH 5-5</STRING><STRING>CH 5-6</STRING><STRING>CH 5-7</STRING><STRING>CH 5-8</STRING><STRING>CH 5-9</STRING><STRING>CH 5-10</STRING><STRING>CH 5-11</STRING><STRING>CH 5-12</STRING><STRING>CH 5-13</STRING><STRING>CH 5-14</STRING><STRING>CH 5-15</STRING><STRING>CH 5-16</STRING><STRING>CH 5-17</STRING><STRING>CH 5-18</STRING><STRING>CH 5-19</STRING><STRING>CH 5-20</STRING><STRING>CH 5-21</STRING><STRING>CH 5-22</STRING><STRING>CH 5-23</STRING><STRING>CH 5-24</STRING><STRING>CH 5-25</STRING><STRING>CH 5-26</STRING><STRING>CH 5-27</STRING><STRING>CH 5-28</STRING><STRING>CH 5-29</STRING><STRING>CH 5-30</STRING><STRING>CH 6-1</STRING><STRING>CH 6-2</STRING><STRING>CH 6-3</STRING><STRING>CH 6-4</STRING><STRING>CH 6-5</STRING><STRING>CH 6-6</STRING><STRING>CH 6-7</STRING><STRING>CH 6-8</STRING><STRING>CH 6-9</STRING><STRING>CH 6-10</STRING><STRING>CH 6-11</STRING><STRING>CH 6-12</STRING><STRING>CH 6-13</STRING><STRING>CH 6-14</STRING><STRING>CH 6-15</STRING><STRING>CH 6-16</STRING><STRING>CH 6-17</STRING><STRING>CH 6-18</STRING><STRING>CH 6-19</STRING><STRING>CH 6-20</STRING><STRING>CH 6-21</STRING><STRING>CH 6-22</STRING><STRING>CH 6-23</STRING><STRING>CH 6-24</STRING><STRING>CH 6-25</STRING><STRING>CH 6-26</STRING><STRING>CH 6-27</STRING><STRING>CH 6-28</STRING><STRING>CH 6-29</STRING><STRING>CH 6-30</STRING><STRING>CH 7-1</STRING><STRING>CH 7-2</STRING><STRING>CH 7-3</STRING><STRING>CH 7-4</STRING><STRING>CH 7-5</STRING><STRING>CH 7-6</STRING><STRING>CH 7-7</STRING><STRING>CH 7-8</STRING><STRING>CH 7-9</STRING><STRING>CH 7-10</STRING><STRING>CH 7-11</STRING><STRING>CH 7-12</STRING><STRING>CH 7-13</STRING><STRING>CH 7-14</STRING><STRING>CH 7-15</STRING><STRING>CH 7-16</STRING><STRING>CH 7-17</STRING><STRING>CH 7-18</STRING><STRING>CH 7-19</STRING><STRING>CH 7-20</STRING><STRING>CH 7-21</STRING><STRING>CH 7-22</STRING><STRING>CH 7-23</STRING><STRING>CH 7-24</STRING><STRING>CH 7-25</STRING><STRING>CH 7-26</STRING><STRING>CH 7-27</STRING><STRING>CH 7-28</STRING><STRING>CH 7-29</STRING><STRING>CH 7-30</STRING><STRING>CH 8-1</STRING><STRING>CH 8-2</STRING><STRING>CH 8-3</STRING><STRING>CH 8-4</STRING><STRING>CH 8-5</STRING><STRING>CH 8-6</STRING><STRING>CH 8-7</STRING><STRING>CH 8-8</STRING><STRING>CH 8-9</STRING><STRING>CH 8-10</STRING><STRING>CH 8-11</STRING><STRING>CH 8-12</STRING><STRING>CH 8-13</STRING><STRING>CH 8-14</STRING><STRING>CH 8-15</STRING><STRING>CH 8-16</STRING><STRING>CH 8-17</STRING><STRING>CH 8-18</STRING><STRING>CH 8-19</STRING><STRING>CH 8-20</STRING><STRING>CH 8-21</STRING><STRING>CH 8-22</STRING><STRING>CH 8-23</STRING><STRING>CH 8-24</STRING><STRING>CH 8-25</STRING><STRING>CH 8-26</STRING><STRING>CH 8-27</STRING><STRING>CH 8-28</STRING><STRING>CH 8-29</STRING><STRING>CH 8-30</STRING><STRING>CH 9-1</STRING><STRING>CH 9-2</STRING><STRING>CH 9-3</STRING><STRING>CH 9-4</STRING><STRING>CH 9-5</STRING><STRING>CH 9-6</STRING><STRING>CH 9-7</STRING><STRING>CH 9-8</STRING><STRING>CH 9-9</STRING><STRING>CH 9-10</STRING><STRING>CH 9-11</STRING><STRING>CH 9-12</STRING><STRING>CH 9-13</STRING><STRING>CH 9-14</STRING><STRING>CH 9-15</STRING><STRING>CH 9-16</STRING><STRING>CH 9-17</STRING><STRING>CH 9-18</STRING><STRING>CH 9-19</STRING><STRING>CH 9-20</STRING><STRING>CH 9-21</STRING><STRING>CH 9-22</STRING><STRING>CH 9-23</STRING><STRING>CH 9-24</STRING><STRING>CH 9-25</STRING><STRING>CH 9-26</STRING><STRING>CH 9-27</STRING><STRING>CH 9-28</STRING><STRING>CH 9-29</STRING><STRING>CH 9-30</STRING><STRING>CH 10-1</STRING><STRING>CH 10-2</STRING><STRING>CH 10-3</STRING><STRING>CH 10-4</STRING><STRING>CH 10-5</STRING><STRING>CH 10-6</STRING><STRING>CH 10-7</STRING><STRING>CH 10-8</STRING><STRING>CH 10-9</STRING><STRING>CH 10-10</STRING><STRING>CH 10-11</STRING><STRING>CH 10-12</STRING><STRING>CH 10-13</STRING><STRING>CH 10-14</STRING><STRING>CH 10-15</STRING><STRING>CH 10-16</STRING><STRING>CH 10-17</STRING><STRING>CH 10-18</STRING><STRING>CH 10-19</STRING><STRING>CH 10-20</STRING><STRING>CH 10-21</STRING><STRING>CH 10-22</STRING><STRING>CH 10-23</STRING><STRING>CH 10-24</STRING><STRING>CH 10-25</STRING><STRING>CH 10-26</STRING><STRING>CH 10-27</STRING><STRING>CH 10-28</STRING><STRING>CH 10-29</STRING><STRING>CH 10-30</STRING><STRING>CH 11-1</STRING><STRING>CH 11-2</STRING><STRING>CH 11-3</STRING><STRING>CH 11-4</STRING><STRING>CH 11-5</STRING><STRING>CH 11-6</STRING><STRING>CH 11-7</STRING><STRING>CH 11-8</STRING><STRING>CH 11-9</STRING><STRING>CH 11-10</STRING><STRING>CH 11-11</STRING><STRING>CH 11-12</STRING><STRING>CH 11-13</STRING><STRING>CH 11-14</STRING><STRING>CH 11-15</STRING><STRING>CH 11-16</STRING><STRING>CH 11-17</STRING><STRING>CH 11-18</STRING><STRING>CH 11-19</STRING><STRING>CH 11-20</STRING><STRING>CH 11-21</STRING><STRING>CH 11-22</STRING><STRING>CH 11-23</STRING><STRING>CH 11-24</STRING><STRING>CH 11-25</STRING><STRING>CH 11-26</STRING><STRING>CH 11-27</STRING><STRING>CH 11-28</STRING><STRING>CH 11-29</STRING><STRING>CH 11-30</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Channel</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Operation">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Operation</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=87 type="Enum" name="Mode">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=22><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Mode</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="SoC_Out">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SoC_Out(%)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="CD_Rate">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>C-Rate(C)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=181 type="Combo Box" name="Action">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8004 order=0 type="Listbox Display">
+								<CONTROL ID=230 type="Listbox" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+									</PARTS>
+									<PRIV>
+										<CELL_FONTS>
+											[-2 -2]<FONT predef=APPFONT color=000000>
+										</CELL_FONTS>
+										<ROW_HEADER>
+										</ROW_HEADER>
+										<COL_HEADER>
+										</COL_HEADER>
+										<STRINGS>
+											<STRING>Charge</STRING>
+											<STRING>Discharge</STRING>
+											<STRING>Rest</STRING>
+										</STRINGS>
+									</PRIV>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Action</STEXT></LABEL></PART>
+							<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Delay">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Delay                              s</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=87 type="Enum" name="ESR Sampling (S)">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=22><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>ESR Sampling (S)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="End Condition (A)">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>End Condition (A)</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="SOCLearn">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Cluster</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=79 type="Boolean" name="Action">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=22><STRINGS><STRING>Learn & Build</STRING><STRING>Load</STRING><STRING>Learn & Build</STRING><STRING>Load</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Actions</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=91 type="Path" name="Path">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=8019 order=0 type="Browse Button">
+								<CONTROL ID=79 type="Boolean" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model:</STEXT></LABEL></PART>
+						</PARTS>
+						<PRIV>
+							<PROMPT></PROMPT>
+							<MTCH_PTN>*.csv</MTCH_PTN>
+							<PTN_LBEL>csv</PTN_LBEL>
+							<STRT_PTH><PATH type="absolute"></PATH></STRT_PTH>
+							<PTH_BTN_LBL></PTH_BTN_LBL>
+						</PRIV>
+						<DEFAULT>
+							<PATH type="absolute"></PATH>
+						</DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Status">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Status</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=81 type="String" name="Actions">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Actions</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Volt">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Volt:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Curr">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Curr:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="Pow">
+						<DESC></DESC>
+						<TIP>Reg. Output Voltage</TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Pow:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=87 type="Ring" name="SocSTAT">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="Ring Text"><MLABEL><FONT size=24><STRINGS><STRING>S1: discharge</STRING><STRING>S2: charge</STRING><STRING>S3: discharge</STRING><STRING>S4: charge</STRING><STRING>S1: charge</STRING><STRING>S2: discharge</STRING><STRING>S3: charge</STRING><STRING>S4: discharge</STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>SocSTAT</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<GROUPER>
+				<PARTS>
+					<CONTROL ID=94 type="Waveform Chart" name="Chart_SOC">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8022 order=0 type="">
+								<CONTROL ID=231 type="Tree" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+									</PARTS>
+									<PRIV>
+										<CELL_FONTS>
+											[-2 -2]<FONT predef=APPFONT color=000000>
+											[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+										</CELL_FONTS>
+										<ROW_HEADER>
+										</ROW_HEADER>
+										<COL_HEADER>
+											<STRING>Cursors:</STRING>
+											<STRING>X</STRING>
+											<STRING>Y</STRING>
+										</COL_HEADER>
+										<STRINGS>
+										</STRINGS>
+									</PRIV>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Chart_SOC</STEXT></LABEL></PART>
+						</PARTS>
+						<PRIV>
+							<PLOTS><STRING>Chargee</STRING><STRING>Discharge</STRING><STRING>DUT-V</STRING><STRING>Plot 3</STRING><STRING>Plot 4</STRING></PLOTS>
+							<SCALE_NAMES><STRING>SOC(%)</STRING><STRING>Volt(V)</STRING></SCALE_NAMES>
+						</PRIV>
+					</CONTROL>
+					<CONTROL ID=94 type="Waveform Chart" name="Chart IVP">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8022 order=0 type="">
+								<CONTROL ID=231 type="Tree" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+									</PARTS>
+									<PRIV>
+										<CELL_FONTS>
+											[-2 -2]<FONT predef=APPFONT color=000000>
+											[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+										</CELL_FONTS>
+										<ROW_HEADER>
+										</ROW_HEADER>
+										<COL_HEADER>
+											<STRING>Cursors:</STRING>
+											<STRING>X</STRING>
+											<STRING>Y</STRING>
+										</COL_HEADER>
+										<STRINGS>
+										</STRINGS>
+									</PRIV>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Chart IVP</STEXT></LABEL></PART>
+						</PARTS>
+						<PRIV>
+							<PLOTS><STRING>Volt</STRING><STRING>Current</STRING><STRING>Power</STRING></PLOTS>
+							<SCALE_NAMES><STRING>Time</STRING><STRING>Volt(V)</STRING><STRING>Current(A)</STRING><STRING>Power</STRING></SCALE_NAMES>
+						</PRIV>
+					</CONTROL>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="Boolean" name="Chart">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=22 color=FF002A><STRINGS><STRING>VCP</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22 color=FF0000>SOC</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Chart" name="Chart_DCIR">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>ISO 12405</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>Volt</STRING><STRING>Current</STRING><STRING>Power</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Volt(V)</STRING><STRING>Current(A)</STRING><STRING>Power</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=181 type="Combo Box" name="TestLists">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8004 order=0 type="Listbox Display">
+						<CONTROL ID=230 type="Listbox" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24></STEXT></LABEL></PART>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+								</COL_HEADER>
+								<STRINGS>
+									<STRING>ISO 12405</STRING>
+									<STRING>IEC 61960</STRING>
+									<STRING>Customized</STRING>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>DCIR Test Lists</STEXT></LABEL></PART>
+					<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT>ISO 12405</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="Add ">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=24><STRINGS><STRING>Add</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Add Button</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="Remove ">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=24><STRINGS><STRING>Del</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Remove Button</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</PAGE>
+		<PAGE>
+			<DESC></DESC>
+			<TIP></TIP>
+			<GROUPER>
+				<PARTS>
+					<CONTROL ID=81 type="String" name="SCPI Test">
+						<DESC>History list of test of SCPI command & its response for above selected Instruments</DESC>
+						<TIP>SCPI Command Test Result</TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=18></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18><<DAQ::""LR8450-01"">></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=181 type="Combo Box" name="Command">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8004 order=0 type="Listbox Display">
+								<CONTROL ID=230 type="Listbox" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18></STEXT></LABEL></PART>
+									</PARTS>
+									<PRIV>
+										<CELL_FONTS>
+											[-2 -2]<FONT predef=APPFONT color=000000>
+										</CELL_FONTS>
+										<ROW_HEADER>
+										</ROW_HEADER>
+										<COL_HEADER>
+										</COL_HEADER>
+										<STRINGS>
+											<STRING>*CLS</STRING>
+											<STRING>*IDN</STRING>
+											<STRING>*RST</STRING>
+											<STRING>*ID?</STRING>
+											<STRING>*IDN?</STRING>
+										</STRINGS>
+									</PRIV>
+								</CONTROL>
+							</PART>
+							<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT><FONT size=18></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Command:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</PARTS></GROUPER>
+			<CONTROL ID=83 type="Cluster" name="Source">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Source</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Load">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Load</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Chamber">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Chamber(Disabled)</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="IO Ctrl">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>IO Ctrl</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=148 type="DAQmx Device Name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="Comm">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Comm(Disabled)</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="DAQ">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>DAQ</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="Cluster" name="PowerMeter">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>PowerMeter</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>SN</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Model</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Phy IO:</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Setting</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><SAME_AS_LABEL></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=79 type="Boolean" name="InstScan">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="Boolean Text"><MLABEL><FONT size=24><STRINGS><STRING>Inst. Detect</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>InstScan</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=231 type="Tree" name="Instruments">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=24>Available Inst. Lists:</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<CELL_FONTS>
+						[-2 -2]<FONT predef=APPFONT size=20 color=000000>
+					</CELL_FONTS>
+					<ROW_HEADER>
+					</ROW_HEADER>
+					<COL_HEADER>
+						<STRING>Inst</STRING>
+						<STRING>Resource</STRING>
+						<STRING>Manufacture</STRING>
+						<STRING>SN</STRING>
+						<STRING>Ver</STRING>
+					</COL_HEADER>
+					<STRINGS>
+					</STRINGS>
+				</PRIV>
+			</CONTROL>
+		</PAGE>
+		<PAGE_CAP_FONT><FONT predef=APPFONT color=000000></PAGE_CAP_FONT>
+		<PRIV><PAGE_CAPTIONS><STRING>C-D Mon.</STRING><STRING>BMS Mon.</STRING><STRING>SOCEx</STRING><STRING>Inst Cfg</STRING></PAGE_CAPTIONS></PRIV>
+	</CONTROL>
+	<CONTROL ID=230 type="Multicolumn Listbox" name="Can_Log List">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Can_Log List</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<CELL_FONTS>
+				[-2 -2]<FONT predef=APPFONT color=000000>
+			</CELL_FONTS>
+			<ROW_HEADER>
+			</ROW_HEADER>
+			<COL_HEADER>
+				<STRING>Rec. ID</STRING>
+				<STRING>Time Stamp</STRING>
+				<STRING>ID</STRING>
+				<STRING>Received</STRING>
+				<STRING>Expected</STRING>
+			</COL_HEADER>
+			<STRINGS>
+				<STRING>1</STRING>
+				<STRING>12121213424324</STRING>
+				<STRING>11</STRING>
+				<STRING>123456789AB CD EF</STRING>
+				<STRING>aa bb cc dd ee ff 11 22</STRING>
+				<STRING>2</STRING>
+				<STRING>32132132452535</STRING>
+				<STRING>36</STRING>
+				<STRING>414243444546</STRING>
+				<STRING>414243444546</STRING>
+				<STRING>3</STRING>
+				<STRING>4</STRING>
+			</STRINGS>
+		</PRIV>
+	</CONTROL>
+	<CONTROL ID=230 type="Multicolumn Listbox" name="CAN Setting">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>CAN Setting</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<CELL_FONTS>
+				[-2 -2]<FONT predef=APPFONT color=000000>
+			</CELL_FONTS>
+			<ROW_HEADER>
+			</ROW_HEADER>
+			<COL_HEADER>
+				<STRING>Register</STRING>
+				<STRING>R/W</STRING>
+				<STRING>Hex Value(Data)</STRING>
+				<STRING>String</STRING>
+			</COL_HEADER>
+			<STRINGS>
+				<STRING>012</STRING>
+				<STRING>R</STRING>
+				<STRING>23</STRING>
+				<STRING>W</STRING>
+				<STRING>3030<CRLF>
+</STRING>
+				<STRING>00</STRING>
+				<STRING>25</STRING>
+				<STRING>R</STRING>
+				<STRING>12</STRING>
+				<STRING>11</STRING>
+				<STRING>R</STRING>
+				<STRING>123456789AB CD EF<CRLF>
+</STRING>
+				<STRING>#Eg?R??</STRING>
+				<STRING>33</STRING>
+				<STRING>W</STRING>
+				<STRING>012345678A<CRLF>
+</STRING>
+				<STRING>#Eg?</STRING>
+				<STRING>3E</STRING>
+				<STRING>R</STRING>
+				<STRING>1234<CRLF>
+</STRING>
+				<STRING>4</STRING>
+				<STRING>36</STRING>
+				<STRING>R</STRING>
+				<STRING>414243444546<CRLF>
+</STRING>
+				<STRING>ABCDEF</STRING>
+				<STRING>R</STRING>
+				<STRING>5748415420495320544845204441592041465445522053554E 444159<CRLF>
+</STRING>
+				<STRING>WHAT IS THE DAY AFTER SUNDAY</STRING>
+				<STRING>W</STRING>
+				<STRING>574841542049532054<CRLF>
+</STRING>
+				<STRING>WHAT IS T</STRING>
+				<STRING>12</STRING>
+				<STRING>321321</STRING>
+				<STRING>111</STRING>
+				<STRING>123</STRING>
+			</STRINGS>
+		</PRIV>
+	</CONTROL>
+	<CONTROL ID=83 type="Cluster" name="VisDisplay">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<RTM_STRINGS>
+				<STRING>Clear Log</STRING>
+				<STRING>Export  to CSV</STRING>
+			</RTM_STRINGS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>VisDisplay</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=230 type="Multicolumn Listbox" name="Multicolumn Listbox">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<RTM_STRINGS>
+						<STRING>Clear Log</STRING>
+						<STRING>Export to CSV</STRING>
+					</RTM_STRINGS>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=18>Multicolumn Listbox</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<CELL_FONTS>
+						[-2 -2]<FONT predef=APPFONT size=18 color=000000>
+					</CELL_FONTS>
+					<ROW_HEADER>
+						<STRING>1</STRING>
+						<STRING>2</STRING>
+					</ROW_HEADER>
+					<COL_HEADER>
+						<STRING>Time Stamp</STRING>
+						<STRING>Action</STRING>
+						<STRING>Step_Id</STRING>
+						<STRING>Volt_I</STRING>
+						<STRING>Curr_i</STRING>
+						<STRING>Power_i</STRING>
+						<STRING>Ah_i</STRING>
+						<STRING>Wh_i</STRING>
+						<STRING>StepOut</STRING>
+						<STRING>Volt_M</STRING>
+						<STRING>Curr_M</STRING>
+						<STRING>Ah_M</STRING>
+						<STRING>Wh_M</STRING>
+						<STRING>Temp.</STRING>
+						<STRING>Humidity</STRING>
+					</COL_HEADER>
+					<STRINGS>
+					</STRINGS>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 13">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 13</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 12">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 12</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 11">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 11</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 10">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 10</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 9">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 9</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 8">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 8</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 7">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 7</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 6">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<RTM_STRINGS>
+					</RTM_STRINGS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 6</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 5">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 5</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 4">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 4</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 3">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 3</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>CH_6</STRING><STRING>CH_7</STRING><STRING>CH_8</STRING><STRING>CH_9</STRING><STRING>CH_10</STRING><STRING>CH_11</STRING><STRING>CH_12</STRING><STRING>CH_13</STRING><STRING>CH_14</STRING><STRING>CH_15</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph 2">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph 2</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>CH_1</STRING><STRING>CH_2</STRING><STRING>CH_3</STRING><STRING>CH_4</STRING><STRING>CH_5</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Amplitude</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+			<CONTROL ID=94 type="Waveform Graph" name="Waveform Graph">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8022 order=0 type="">
+						<CONTROL ID=231 type="Tree" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+									[-1 -2]<FONT predef=APPFONT style='B' color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+									<STRING>Cursors:</STRING>
+									<STRING>X</STRING>
+									<STRING>Y</STRING>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Waveform Graph</STEXT></LABEL></PART>
+				</PARTS>
+				<PRIV>
+					<PLOTS><STRING>Volt</STRING><STRING>Curr</STRING><STRING>Power</STRING><STRING>Plot 3</STRING><STRING>Plot 4</STRING><STRING>Plot 5</STRING><STRING>Plot 6</STRING><STRING>Plot 7</STRING><STRING>Plot 8</STRING><STRING>Plot 9</STRING><STRING>Plot 10</STRING><STRING>Plot 11</STRING><STRING>Plot 12</STRING><STRING>Plot 13</STRING><STRING>Plot 14</STRING><STRING>Plot 15</STRING><STRING>Plot 16</STRING><STRING>Plot 17</STRING><STRING>Plot 18</STRING><STRING>Plot 19</STRING><STRING>Plot 20</STRING><STRING>Plot 21</STRING><STRING>Plot 22</STRING><STRING>Plot 23</STRING><STRING>Plot 24</STRING><STRING>Plot 25</STRING><STRING>Plot 26</STRING><STRING>Plot 27</STRING><STRING>Plot 28</STRING><STRING>Plot 29</STRING></PLOTS>
+					<SCALE_NAMES><STRING>Time</STRING><STRING>Volt(V)</STRING><STRING>Amps( A)</STRING><STRING>Power(W)</STRING></SCALE_NAMES>
+				</PRIV>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=85 type="Control Refnum" name="InputMeas Refnum">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>InputMeas Refnum</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<CONTROL ID=83 type="Cluster" name="Power">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Power</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Setting</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SN</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Model</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>IO</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=85 type="Control Refnum" name="OutputMeas Refnum ">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>OutputMeas Refnum </STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<CONTROL ID=83 type="Cluster" name="Power">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Power</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=81 type="String" name="Setting">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Setting</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="Numeric" name="SubID">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SubID</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Ver.">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Ver.</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="SN">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SN</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Model">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Model</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Manufacturer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Manufacturer</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=85 type="VISA resource name" name="IO">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="I/O Name Display">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>IO</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=82 type="Array" name="SystemState">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>SystemState</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT>
+			<ARRAY nElems=0>
+			</ARRAY>
+		</DEFAULT>
+		<CONTENT>
+			<CONTROL ID=83 type="Cluster" name="Cluster">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Cluster</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="Numeric" name="Value">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Value</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=87 type="Enum" name="Direction">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="Ring Text"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Direction</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=81 type="String" name="Name">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Name</STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>A1</STRING></DEFAULT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="Cluster" name="OP Info">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>OP Info</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=181 type="Combo Box" name="Battery Type">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8004 order=0 type="Listbox Display">
+						<CONTROL ID=230 type="Listbox" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+								</COL_HEADER>
+								<STRINGS>
+									<STRING>BAT</STRING>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT><FONT size=19></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Battery Model:</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="Lot No.">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=19></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Lot No.</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="String" name="FileName">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="Text"><LABEL><STEXT><FONT size=19></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>FileName:</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=181 type="Combo Box" name="Department">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8004 order=0 type="Listbox Display">
+						<CONTROL ID=230 type="Listbox" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT><FONT size=19></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Department:</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=181 type="Combo Box" name="Operator">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8004 order=0 type="Listbox Display">
+						<CONTROL ID=230 type="Listbox" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22></STEXT></LABEL></PART>
+							</PARTS>
+							<PRIV>
+								<CELL_FONTS>
+									[-2 -2]<FONT predef=APPFONT color=000000>
+								</CELL_FONTS>
+								<ROW_HEADER>
+								</ROW_HEADER>
+								<COL_HEADER>
+								</COL_HEADER>
+								<STRINGS>
+								</STRINGS>
+							</PRIV>
+						</CONTROL>
+					</PART>
+					<PART ID=8005 order=0 type="Data Display"><LABEL><STEXT><FONT size=19></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=22>Operator:</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=231 type="Tree" name="ExecSeqList">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<RTM_STRINGS>
+				<STRING>Delete </STRING>
+				<STRING>Delete All Items</STRING>
+			</RTM_STRINGS>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT><FONT size=20>ExecSeqList</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<CELL_FONTS>
+				[-2 -2]<FONT predef=APPFONT size=20 color=000000>
+			</CELL_FONTS>
+			<ROW_HEADER>
+			</ROW_HEADER>
+			<COL_HEADER>
+				<STRING>Steps</STRING>
+				<STRING>Comments</STRING>
+				<STRING>Parameters </STRING>
+			</COL_HEADER>
+			<STRINGS>
+			</STRINGS>
+		</PRIV>
+	</CONTROL>
+	<CONTROL ID=82 type="Array" name="discharge_table">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="Caption"><LABEL><STEXT>discharge_table</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<CONTROL ID=80 type="Numeric" name="Numeric Control">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="Caption"><LABEL><STEXT>Numeric Control</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+</VI>
+
+

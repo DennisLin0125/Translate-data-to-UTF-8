@@ -1,0 +1,204 @@
+ID	OFFSet	Org. String	TA. String
+0	414	MenuStrip	菜單條
+1	803	Settings Button	設定按鈕
+2	1139	Play	玩
+3	1478	New Button	新按鈕
+4	1837	Emergency	緊急狀況
+5	2201	fdsafsd	FDSAAFSD
+6	2548	Pause	暫停
+7	2736	Exit	出口
+8	2922	Logger Settings	記錄器設定
+9	3193	LogRate(ms)	記錄率（毫秒）
+10	3590	Logging Source	記錄來源
+11	4014	Time Stamp	時間戳
+12	4340	"Sample Mode:	Universal	 with 100.0ms"	取樣模式：通用100.0ms
+13	4582	CoreExRef	核心ExRef
+14	5036		
+15	5228	SeqOnTest	序列測試
+16	5729	Password	密碼
+17	5961	Licensed	已獲得許可
+18	6156	LicCheck	許可證檢查
+19	6354	License Mon	許可證星期一
+20	6677	lis	利斯
+21	6998	SerialNumber	序號
+22	7330	FileSystemType	檔案系統類型
+23	7660	VolumeName	卷名稱
+24	7995	Drive Type	驅動器類型
+25	8280	Drive ID	磁碟機ID
+26	8552	main_soc_controls	主_soc_控制
+27	8897	Label.Text	標籤.文字
+28	9166	charge_table	收費表
+29	9380	Numeric Control	數控
+30	9616	SystemTimer	系統定時器
+31	9857	Next Step	下一步
+32	10202	Navigate Tree:Get Next Item	導航樹：取得下一個項目
+33	10474	CtlRef	控制參考
+34	10743	Tree	樹
+35	11582	XML File Path(duplicate)	XML 檔案路徑（重複）
+36	12433	C-D Mon.	CD 週一
+37	12672	Temp.	溫度。
+38	12889	Humidity	濕度
+39	13256	Viewer	觀眾
+40	13476		
+41	13773	Power(W)	功率（瓦）
+42	14009	Current(A)	電流(A)
+43	14247	Voltage(V)	電壓(V)
+44	14511	Elapsed Time	經過時間
+45	14742	Step Elapsed	已過步驟
+46	14971	Loop-Round	循環
+47	15283	Action Step Info.	操作步驟資訊。
+48	15724		
+49	16402	ref main_Soc	參考 main_Soc
+50	16637	Battery Spec.:	電池規格：
+51	16923	Capacity(mAh)	容量(mAh)
+52	17178	Vo(V)	沃(V)
+53	17406	Vcharge(V)	充電電壓(V)
+54	17644	InitCap(%)	初始容量(%)
+55	17880	Capacity(Wh)	容量（瓦時）
+56	18137	Full(V)	滿(V)
+57	18390	Empty(V)	空(V)
+58	18643		
+59	19052	Test Mode	測試模式
+60	19271	Mon	週一
+61	19554	Batt. ?皚	巴特。 ? 皚皚
+62	19805	Enable	使能夠
+63	28027	Channel	頻道
+64	28285	Operation	手術
+65	28666	Mode	模式
+66	28898	SoC_Out(%)	SoC_輸出(%)
+67	29136	C-Rate(C)	C-比率(C)
+68	29606		
+69	30129	Action	行動
+70	30462	Delay                              s	延遲時間
+71	30834	ESR Sampling (S)	ESR 採樣 (S)
+72	31142	End Condition (A)	結束條件 (A)
+73	31409	Cluster	簇
+74	31898	Actions	行動
+75	32422	Model:	模型：
+76	32957	Status	地位
+77	33329	Actions	行動
+78	33621	Volt:	伏特：
+79	33870	Curr:	電流：
+80	34118	Pow:	戰俘：
+81	34713	SocSTAT	SoCSTAT
+82	35662	Chart_SOC	圖表_SOC
+83	36844	Chart IVP	圖IVP
+84	37476	SOC	SOC
+85	38350	ISO 12405	ISO 12405
+86	39031		
+87	39527	DCIR Test Lists	DCIR 測試列表
+88	39970	Add Button	新增按鈕
+89	40317	Remove Button	刪除按鈕
+90	40826	"DAQ::""""LR8450-01"""""	"資料擷取::""""LR8450-01"""""
+91	41351		
+92	42035	Command:	命令：
+93	42285	Source	來源
+94	42565	SubID	子ID
+95	42885	Ver.	版本。
+96	43243	SN	序號
+97	43602	Model	模型
+98	43971	Manufacturer	製造商
+99	44459	Phy IO:	物理輸入輸出：
+100	44784	Setting	環境
+101	45078	Load	載入
+102	45356	SubID	子ID
+103	45676	Ver.	版本。
+104	46034	SN	序號
+105	46393	Model	模型
+106	46762	Manufacturer	製造商
+107	47250	Phy IO:	物理輸入輸出：
+108	47575	Setting	環境
+109	47872	Chamber(Disabled)	會議廳（殘障人士）
+110	48163	SubID	子ID
+111	48483	Ver.	版本。
+112	48841	SN	序號
+113	49200	Model	模型
+114	49569	Manufacturer	製造商
+115	50057	Phy IO:	物理輸入輸出：
+116	50382	Setting	環境
+117	50679	IO Ctrl	IO控制
+118	50960	SubID	子ID
+119	51280	Ver.	版本。
+120	51638	SN	序號
+121	51997	Model	模型
+122	52366	Manufacturer	製造商
+123	52653	Phy IO:	物理輸入輸出：
+124	52978	Setting	環境
+125	53272	Comm(Disabled)	通訊（已停用）
+126	53560	SubID	子ID
+127	53880	Ver.	版本。
+128	54238	SN	序號
+129	54597	Model	模型
+130	54966	Manufacturer	製造商
+131	55454	Phy IO:	物理輸入輸出：
+132	55779	Setting	環境
+133	56072	DAQ	數據採集
+134	56349	SubID	子ID
+135	56669	Ver.	版本。
+136	57027	SN	序號
+137	57386	Model	模型
+138	57755	Manufacturer	製造商
+139	58243	Phy IO:	物理輸入輸出：
+140	58568	Setting	環境
+141	58868	PowerMeter	功率計
+142	59152	SubID	子ID
+143	59472	Ver.	版本。
+144	59830	SN	序號
+145	60189	Model	模型
+146	60558	Manufacturer	製造商
+147	61046	Phy IO:	物理輸入輸出：
+148	61371	Setting	環境
+149	61801	InstScan	掃描儀
+150	62079	Available Inst. Lists:	可用的研究所。列表：
+151	62976	Can_Log List	Can_Log 列表
+152	63939	CAN Setting	CAN 設定
+153	65593	VisDisplay	可見顯示
+154	66033	Multicolumn Listbox	多列列錶框
+155	67638	Waveform Graph 13	波形圖13
+156	69330	Waveform Graph 12	波形圖12
+157	71022	Waveform Graph 11	波形圖11
+158	72714	Waveform Graph 10	波形圖10
+159	74405	Waveform Graph 9	波形圖9
+160	76095	Waveform Graph 8	波形圖8
+161	77785	Waveform Graph 7	波形圖7
+162	79514	Waveform Graph 6	波形圖6
+163	81204	Waveform Graph 5	波形圖5
+164	82894	Waveform Graph 4	波形圖4
+165	84584	Waveform Graph 3	波形圖3
+166	86255	Waveform Graph 2	波形圖2
+167	87943	Waveform Graph	波形圖
+168	89067	InputMeas Refnum	輸入測量引用句柄
+169	89275	Power	力量
+170	89618	Setting	環境
+171	89837	SubID	子ID
+172	90129	Ver.	版本。
+173	90418	SN	序號
+174	90708	Model	模型
+175	91008	Manufacturer	製造商
+176	91441	IO	IO
+177	91713	OutputMeas Refnum	輸出測量引用句柄
+178	91923	Power	力量
+179	92266	Setting	環境
+180	92485	SubID	子ID
+181	92777	Ver.	版本。
+182	93066	SN	序號
+183	93356	Model	模型
+184	93656	Manufacturer	製造商
+185	94089	IO	IO
+186	94345	SystemState	系統狀態
+187	94607	Cluster	簇
+188	94874	Value	價值
+189	95180	Direction	方向
+190	95476	Name	姓名
+191	95777	OP Info	操作資訊
+192	96263		
+193	96779	Battery Model:	電池型號：
+194	97095	Lot No.	批號
+195	97444	FileName:	檔案名稱：
+196	97927		
+197	98413	Department:	部門：
+198	98857		
+199	99343	Operator:	操作員：
+200	99735	ExecSeqList	執行序列表
+201	100241	discharge_table	放電表
+202	100458	Numeric Control	數控

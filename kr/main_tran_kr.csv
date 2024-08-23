@@ -1,0 +1,204 @@
+ID	OFFSet	Org. String	TA. String
+0	414	MenuStrip	메뉴스트립
+1	803	Settings Button	설정 버튼
+2	1139	Play	놀다
+3	1478	New Button	새 버튼
+4	1837	Emergency	비상
+5	2201	fdsafsd	fdsafsd
+6	2548	Pause	정지시키다
+7	2736	Exit	출구
+8	2922	Logger Settings	로거 설정
+9	3193	LogRate(ms)	로그 속도(ms)
+10	3590	Logging Source	로깅 소스
+11	4014	Time Stamp	타임 스탬프
+12	4340	"Sample Mode:	Universal	 with 100.0ms"	샘플 모드: 100.0ms의 범용
+13	4582	CoreExRef	CoreExRef
+14	5036		
+15	5228	SeqOnTest	SeqOn 테스트
+16	5729	Password	비밀번호
+17	5961	Licensed	라이센스가 있는
+18	6156	LicCheck	라이센스체크
+19	6354	License Mon	라이센스 월
+20	6677	lis	리스
+21	6998	SerialNumber	일련번호
+22	7330	FileSystemType	파일시스템 유형
+23	7660	VolumeName	볼륨 이름
+24	7995	Drive Type	드라이브 유형
+25	8280	Drive ID	드라이브 ID
+26	8552	main_soc_controls	main_soc_controls
+27	8897	Label.Text	라벨.텍스트
+28	9166	charge_table	요금_테이블
+29	9380	Numeric Control	수치 제어
+30	9616	SystemTimer	시스템타이머
+31	9857	Next Step	다음 단계
+32	10202	Navigate Tree:Get Next Item	트리 탐색:다음 항목 가져오기
+33	10474	CtlRef	CtlRef
+34	10743	Tree	나무
+35	11582	XML File Path(duplicate)	XML 파일 경로(중복)
+36	12433	C-D Mon.	CD 월.
+37	12672	Temp.	온도
+38	12889	Humidity	습기
+39	13256	Viewer	뷰어
+40	13476		
+41	13773	Power(W)	전력(와트)
+42	14009	Current(A)	전류(A)
+43	14247	Voltage(V)	전압(V)
+44	14511	Elapsed Time	경과 시간
+45	14742	Step Elapsed	경과된 단계
+46	14971	Loop-Round	루프 라운드
+47	15283	Action Step Info.	작업 단계 정보
+48	15724		
+49	16402	ref main_Soc	참조 main_Soc
+50	16637	Battery Spec.:	배터리 사양:
+51	16923	Capacity(mAh)	용량(mAh)
+52	17178	Vo(V)	보(V)
+53	17406	Vcharge(V)	V전하(V)
+54	17644	InitCap(%)	초기화캡(%)
+55	17880	Capacity(Wh)	용량(Wh)
+56	18137	Full(V)	전체(V)
+57	18390	Empty(V)	비어있음(V)
+58	18643		
+59	19052	Test Mode	테스트 모드
+60	19271	Mon	월
+61	19554	Batt. ?皚	배트. ?皚
+62	19805	Enable	할 수 있게 하다
+63	28027	Channel	채널
+64	28285	Operation	작업
+65	28666	Mode	방법
+66	28898	SoC_Out(%)	SoC_Out(%)
+67	29136	C-Rate(C)	C-레이트(C)
+68	29606		
+69	30129	Action	행동
+70	30462	Delay                              s	지연
+71	30834	ESR Sampling (S)	ESR 샘플링(S)
+72	31142	End Condition (A)	종료 조건(A)
+73	31409	Cluster	무리
+74	31898	Actions	행위
+75	32422	Model:	모델:
+76	32957	Status	상태
+77	33329	Actions	행위
+78	33621	Volt:	볼트:
+79	33870	Curr:	통화:
+80	34118	Pow:	펑:
+81	34713	SocSTAT	SocSTAT
+82	35662	Chart_SOC	차트_SOC
+83	36844	Chart IVP	차트 IVP
+84	37476	SOC	SOC
+85	38350	ISO 12405	ISO 12405
+86	39031		
+87	39527	DCIR Test Lists	DCIR 테스트 목록
+88	39970	Add Button	버튼 추가
+89	40317	Remove Button	버튼 제거
+90	40826	"DAQ::""""LR8450-01"""""	"DAQ::""""LR8450-01"""""
+91	41351		
+92	42035	Command:	명령:
+93	42285	Source	원천
+94	42565	SubID	하위 ID
+95	42885	Ver.	버전
+96	43243	SN	SN
+97	43602	Model	모델
+98	43971	Manufacturer	제조업체
+99	44459	Phy IO:	물리적 IO:
+100	44784	Setting	환경
+101	45078	Load	짐
+102	45356	SubID	하위 ID
+103	45676	Ver.	버전
+104	46034	SN	SN
+105	46393	Model	모델
+106	46762	Manufacturer	제조업체
+107	47250	Phy IO:	물리적 IO:
+108	47575	Setting	환경
+109	47872	Chamber(Disabled)	챔버(비활성화)
+110	48163	SubID	하위 ID
+111	48483	Ver.	버전
+112	48841	SN	SN
+113	49200	Model	모델
+114	49569	Manufacturer	제조업체
+115	50057	Phy IO:	물리적 IO:
+116	50382	Setting	환경
+117	50679	IO Ctrl	IO 컨트롤
+118	50960	SubID	하위 ID
+119	51280	Ver.	버전
+120	51638	SN	SN
+121	51997	Model	모델
+122	52366	Manufacturer	제조업체
+123	52653	Phy IO:	물리적 IO:
+124	52978	Setting	환경
+125	53272	Comm(Disabled)	통신(비활성화)
+126	53560	SubID	하위 ID
+127	53880	Ver.	버전
+128	54238	SN	SN
+129	54597	Model	모델
+130	54966	Manufacturer	제조업체
+131	55454	Phy IO:	물리적 IO:
+132	55779	Setting	환경
+133	56072	DAQ	DAQ
+134	56349	SubID	하위 ID
+135	56669	Ver.	버전
+136	57027	SN	SN
+137	57386	Model	모델
+138	57755	Manufacturer	제조업체
+139	58243	Phy IO:	물리적 IO:
+140	58568	Setting	환경
+141	58868	PowerMeter	파워미터
+142	59152	SubID	하위 ID
+143	59472	Ver.	버전
+144	59830	SN	SN
+145	60189	Model	모델
+146	60558	Manufacturer	제조업체
+147	61046	Phy IO:	물리적 IO:
+148	61371	Setting	환경
+149	61801	InstScan	InstScan
+150	62079	Available Inst. Lists:	사용 가능한 기관 기울기:
+151	62976	Can_Log List	Can_Log 목록
+152	63939	CAN Setting	CAN 설정
+153	65593	VisDisplay	Vis디스플레이
+154	66033	Multicolumn Listbox	다중 열 목록 상자
+155	67638	Waveform Graph 13	파형 그래프 13
+156	69330	Waveform Graph 12	파형 그래프 12
+157	71022	Waveform Graph 11	파형 그래프 11
+158	72714	Waveform Graph 10	파형 그래프 10
+159	74405	Waveform Graph 9	파형 그래프 9
+160	76095	Waveform Graph 8	파형 그래프 8
+161	77785	Waveform Graph 7	파형 그래프 7
+162	79514	Waveform Graph 6	파형 그래프 6
+163	81204	Waveform Graph 5	파형 그래프 5
+164	82894	Waveform Graph 4	파형 그래프 4
+165	84584	Waveform Graph 3	파형 그래프 3
+166	86255	Waveform Graph 2	파형 그래프 2
+167	87943	Waveform Graph	파형 그래프
+168	89067	InputMeas Refnum	입력 측정 참조 번호
+169	89275	Power	힘
+170	89618	Setting	환경
+171	89837	SubID	하위 ID
+172	90129	Ver.	버전
+173	90418	SN	SN
+174	90708	Model	모델
+175	91008	Manufacturer	제조업체
+176	91441	IO	IO
+177	91713	OutputMeas Refnum	출력 측정 참조 번호
+178	91923	Power	힘
+179	92266	Setting	환경
+180	92485	SubID	하위 ID
+181	92777	Ver.	버전
+182	93066	SN	SN
+183	93356	Model	모델
+184	93656	Manufacturer	제조업체
+185	94089	IO	IO
+186	94345	SystemState	시스템 상태
+187	94607	Cluster	무리
+188	94874	Value	값
+189	95180	Direction	방향
+190	95476	Name	이름
+191	95777	OP Info	OP 정보
+192	96263		
+193	96779	Battery Model:	배터리 모델:
+194	97095	Lot No.	로트 번호
+195	97444	FileName:	파일 이름:
+196	97927		
+197	98413	Department:	부서:
+198	98857		
+199	99343	Operator:	연산자:
+200	99735	ExecSeqList	ExecSeq목록
+201	100241	discharge_table	배출_테이블
+202	100458	Numeric Control	수치 제어

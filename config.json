@@ -1,0 +1,6 @@
+{
+  "config":{
+    "language": ["cn","jp","kr","tw"],
+    "file_list": ["main.txt"]
+  }
+}
