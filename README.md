@@ -11,11 +11,14 @@
   }
 }
 ```
+### 產生依賴
+```bash
+pip freeze > requirements.txt
+```
 ### 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-
 ### build exe檔
 ```bash
 pyinstaller --onefile mainTran.py
